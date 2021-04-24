@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= 'stylesheet' href="./index.css"/>
+    <title>MarketCast Problem</title>
+</head>
+<body onload="loadSegmentsList()">
+
+<div class= "searchBar">
+<form>
+    <h1>Search Data</h1>
+    <div id="data">
+        <h3>Segment:
+            <select id="segments" onchange='fetchField()'>
+                <option>Select Segment</option>
+            </select></h3>
+        <h3>Field:
+            <select id="fields" onchange='displayMessage()'>
+                <option>Select Field</option>
+            </select>
+
+        </h3>
+
+    </div>
+    
+</form>
+<div><textarea id='message' readonly></textarea></div>
+
+
+</div>
+
+<script src="app.js"/>
+
+</body>
+</html>
+<!-- <label for="search"></label>
+<select id= 'data' onchange="fetchArray()">
+    
+</select>
+</br>
+</br>
+<p type ='text' id = 'input'></p> -->
